@@ -1,0 +1,92 @@
+.organism-side-menu {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  padding: var(--space-md);
+}
+
+.organism-side-menu__nav {
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-2xs);
+  border: var(--border-soft);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(var(--blur-soft));
+}
+
+@media (max-width: 900px) {
+  .organism-side-menu {
+    padding-right: 0;
+  }
+
+  .organism-side-menu__nav .molecule-feature-nav-item__copy {
+    position: absolute;
+    left: calc(100% + var(--space-2xs));
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    pointer-events: none;
+    min-width: 12rem;
+    padding: var(--space-2xs) var(--space-xs);
+    border: var(--border-soft);
+    border-radius: var(--radius-sm);
+    background: var(--surface-panel);
+    box-shadow: var(--shadow-panel);
+    transition: opacity var(--motion-fast);
+  }
+
+  .organism-side-menu__nav .molecule-feature-nav-item {
+    justify-content: center;
+  }
+
+  .organism-side-menu__nav .molecule-feature-nav-item:hover .molecule-feature-nav-item__copy,
+  .organism-side-menu__nav .molecule-feature-nav-item:focus-visible .molecule-feature-nav-item__copy,
+  .organism-side-menu__nav .molecule-feature-nav-item--active .molecule-feature-nav-item__copy {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .organism-side-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    padding: var(--space-xs);
+    background: linear-gradient(180deg, rgba(248, 250, 252, 0), rgba(248, 250, 252, 0.96) 30%);
+  }
+
+  .organism-side-menu__nav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-2xs);
+  }
+
+  .organism-side-menu__nav .molecule-feature-nav-item {
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: var(--space-2xs);
+  }
+
+  .organism-side-menu__nav .molecule-feature-nav-item__copy {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  .organism-side-menu__nav .molecule-feature-nav-item__summary {
+    display: none;
+  }
+
+  .organism-side-menu__nav .molecule-feature-nav-item__label {
+    font-size: 0.72rem;
+  }
+}

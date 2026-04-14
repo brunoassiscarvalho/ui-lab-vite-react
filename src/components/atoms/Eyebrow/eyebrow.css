@@ -1,0 +1,8 @@
+.atom-eyebrow {
+  margin: 0;
+  font-size: var(--text-eyebrow);
+  font-weight: 800;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--accent-500);
+}

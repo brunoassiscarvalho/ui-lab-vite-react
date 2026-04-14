@@ -1,0 +1,26 @@
+.template-app-document {
+  font-family: var(--font-sans);
+  color: var(--neutral-900);
+  background: var(--app-bg);
+}
+
+.template-app-document *,
+.template-app-document *::before,
+.template-app-document *::after {
+  box-sizing: border-box;
+}
+
+.template-app-document,
+.template-app-document__body {
+  margin: 0;
+  min-height: 100%;
+}
+
+.template-app-document__body {
+  min-height: 100vh;
+}
+
+.template-app-document button,
+.template-app-document input {
+  font: inherit;
+}

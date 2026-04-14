@@ -1,0 +1,15 @@
+.molecule-form-field {
+  display: grid;
+  gap: var(--space-2xs);
+}
+
+.molecule-form-field__label {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--neutral-900);
+}
+
+.molecule-form-field__helper {
+  font-size: var(--text-xs);
+  color: var(--neutral-700);
+}

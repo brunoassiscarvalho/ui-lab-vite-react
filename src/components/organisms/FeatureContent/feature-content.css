@@ -1,0 +1,46 @@
+.organism-feature-content {
+  display: grid;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  border: var(--border-soft);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(var(--blur-soft));
+}
+
+.organism-feature-content__header {
+  display: grid;
+  gap: var(--space-2xs);
+}
+
+.organism-feature-content__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  width: fit-content;
+  color: var(--accent-500);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.organism-feature-content__back:hover {
+  text-decoration: underline;
+}
+
+.organism-feature-content__heading {
+  display: grid;
+  gap: var(--space-2xs);
+}
+
+.organism-feature-content__title {
+  margin: 0;
+  font-size: var(--text-display-sm);
+  line-height: 1;
+  color: var(--neutral-900);
+}
+
+.organism-feature-content__body {
+  display: grid;
+  gap: var(--space-sm);
+}

@@ -1,0 +1,17 @@
+.organism-component-showcase {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.organism-component-showcase__button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+@media (max-width: 900px) {
+  .organism-component-showcase {
+    grid-template-columns: 1fr;
+  }
+}

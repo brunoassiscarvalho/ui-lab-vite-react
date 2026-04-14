@@ -1,0 +1,40 @@
+.molecule-card {
+  background: var(--surface-card);
+  border: 1px solid var(--neutral-200);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition:
+    box-shadow 0.2s,
+    border-color 0.2s;
+}
+
+.molecule-card:hover {
+  border-color: var(--border-card-hover);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.molecule-card + .molecule-card {
+  margin-top: 2rem;
+}
+
+.molecule-card__header {
+  margin-bottom: 1rem;
+}
+
+.molecule-card__title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.molecule-card__subtitle {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.molecule-card__content {
+  font-size: 0.9375rem;
+  color: var(--text);
+}

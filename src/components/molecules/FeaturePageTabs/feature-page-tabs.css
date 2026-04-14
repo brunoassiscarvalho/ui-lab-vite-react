@@ -1,0 +1,35 @@
+.molecule-feature-page-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+}
+
+.molecule-feature-page-tabs__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.65rem var(--space-sm);
+  border: var(--border-soft);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--neutral-700);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  transition:
+    background-color var(--motion-fast),
+    color var(--motion-fast),
+    border-color var(--motion-fast);
+}
+
+.molecule-feature-page-tabs__link:hover {
+  border-color: rgba(37, 99, 235, 0.28);
+  color: var(--neutral-900);
+}
+
+.molecule-feature-page-tabs__link--active {
+  background: rgba(37, 99, 235, 0.12);
+  border-color: rgba(37, 99, 235, 0.24);
+  color: var(--accent-500);
+}

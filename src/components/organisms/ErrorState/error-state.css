@@ -1,0 +1,43 @@
+.organism-error-state {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--space-lg);
+  background: var(--app-bg);
+}
+
+.organism-error-state__panel {
+  width: min(100%, var(--panel-max));
+  display: grid;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  border: var(--border-soft);
+  border-radius: var(--radius-md);
+  background: var(--surface-panel);
+  box-shadow: var(--shadow-panel);
+}
+
+.organism-error-state__status {
+  margin: 0;
+  font-size: var(--text-eyebrow);
+  font-weight: 800;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--accent-500);
+}
+
+.organism-error-state__title {
+  margin: 0;
+  font-size: var(--text-display-sm);
+  line-height: 1;
+  color: var(--neutral-900);
+}
+
+.organism-error-state__stack {
+  margin: 0;
+  padding: var(--space-sm);
+  overflow-x: auto;
+  border-radius: var(--radius-sm);
+  background: var(--neutral-900);
+  color: var(--neutral-100);
+}

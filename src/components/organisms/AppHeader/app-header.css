@@ -1,0 +1,46 @@
+.organism-app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: var(--border-soft);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(var(--blur-soft));
+}
+
+.organism-app-header__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: inherit;
+  text-decoration: none;
+}
+
+.organism-app-header__brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  background: var(--surface-primary-action);
+  color: var(--neutral-50);
+  box-shadow: var(--shadow-button-primary);
+}
+
+.organism-app-header__brand-copy {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.organism-app-header__brand-text {
+  font-size: var(--text-xs);
+}
+
+@media (max-width: 640px) {
+  .organism-app-header {
+    padding-bottom: calc(var(--space-sm) + 4.5rem);
+    align-items: flex-start;
+  }
+}

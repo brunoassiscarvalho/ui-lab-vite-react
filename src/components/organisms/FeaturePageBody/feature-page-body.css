@@ -1,0 +1,37 @@
+.organism-feature-page-body {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.organism-feature-page-body__grid {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.organism-feature-page-body__rows {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.organism-feature-page-body__row {
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-sm);
+  border: var(--border-soft);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.organism-feature-page-body__row-title {
+  margin: 0;
+  font-size: var(--text-title);
+  line-height: var(--leading-heading);
+  color: var(--neutral-900);
+}
+
+@media (max-width: 900px) {
+  .organism-feature-page-body__grid {
+    grid-template-columns: 1fr;
+  }
+}

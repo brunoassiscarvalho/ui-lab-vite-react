@@ -1,0 +1,28 @@
+.atom-input {
+  width: 100%;
+  min-height: var(--control-md);
+  padding: 0.85rem var(--space-sm);
+  border: var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-field);
+  color: var(--neutral-900);
+  font: inherit;
+  box-shadow: var(--surface-inset);
+  transition:
+    border-color var(--motion-fast),
+    box-shadow var(--motion-fast),
+    background-color var(--motion-fast);
+}
+
+.atom-input::placeholder {
+  color: var(--neutral-500);
+}
+
+.atom-input:focus {
+  outline: none;
+  border-color: var(--accent-500);
+  box-shadow:
+    var(--ring-accent),
+    var(--surface-inset-strong);
+  background: var(--neutral-0);
+}

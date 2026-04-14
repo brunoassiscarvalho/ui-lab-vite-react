@@ -1,0 +1,5 @@
+.atom-body-text {
+  margin: 0;
+  line-height: var(--leading-body);
+  color: var(--neutral-700);
+}

@@ -1,0 +1,11 @@
+.molecule-card-header {
+  display: grid;
+  gap: var(--space-2xs);
+}
+
+.molecule-card-header__title {
+  margin: 0;
+  font-size: var(--text-title);
+  line-height: var(--leading-heading);
+  color: var(--neutral-900);
+}
