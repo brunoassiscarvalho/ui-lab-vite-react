@@ -1,8 +1,55 @@
+import Column from "../../components/atoms/Collumn/Column";
+import Paper from "../../components/atoms/Papper/Paper";
+import Row from "../../components/atoms/Row/Row";
+import "./theme.css";
+
 export default function Feature2ThreeColumnPage() {
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center gap-4">
-      <h1 className="text-2xl font-bold">Feature 2 Three Column Page</h1>
-      <p>This is the three column page for Feature 2.</p>
+    <div>
+      <Column>
+        <Row>
+          <Paper>
+            <h2>Row 1</h2>
+            <p>Content for column 1.</p>
+          </Paper>
+          <Paper>
+            <h2>Row 1</h2>
+            <p>Content for column 2.</p>
+          </Paper>
+          <Paper>
+            <h2>Row 1</h2>
+            <p>Content for column 3.</p>
+          </Paper>
+        </Row>
+        <Row>
+          <Paper>
+            <h2>Row 2</h2>
+            <p>Content for column 1.</p>
+          </Paper>
+          <Paper>
+            <h2>Row 2</h2>
+            <p>Content for column 2.</p>
+          </Paper>
+          <Paper>
+            <h2>Row 2</h2>
+            <p>Content for column 3.</p>
+          </Paper>
+        </Row>
+        <Row>
+          <Paper>
+            <h2>Row 3</h2>
+            <p>Content for column 1.</p>
+          </Paper>
+          <Paper>
+            <h2>Row 3</h2>
+            <p>Content for column 2.</p>
+          </Paper>
+          <Paper>
+            <h2>Row 3</h2>
+            <p>Content for column 3.</p>
+          </Paper>
+        </Row>
+      </Column>
     </div>
   );
 }

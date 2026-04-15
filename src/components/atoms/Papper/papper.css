@@ -1,0 +1,9 @@
+.papper {
+  border: 1px solid var(--primary);
+  background-color: var(--surface0);
+  min-width: calc(var(--space) * 2);
+  min-height: calc(var(--space) * 2);
+  padding: calc(var(--space) * 2);
+  height: 100%;
+  width: 100%;
+}
